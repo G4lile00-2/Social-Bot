@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
         <title>Instagram Bot</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link def rel="stylesheet" href="index.css">
+    <link def rel="preconnect" href="https://fonts.googleapis.com">
+    <link def rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link def href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
     </head>
 <body>
     <div class="header">
         <p>SOCIAL BOT</p>
         </div>
     <div class="config">
-
+        <input type="text" onclick="" id="login" class="login" placeholder="  Login "><br>
+        <input type="password" onclick="" id="pass" class="pass" placeholder="  Password  "><br>
+       <button id="Botrun" class="run" onclick="bot()">Run the bot</button>
+    
         </div>
     <div class="info">
-
+        <table class="tablefix" align="center">
+            <tr>
+              <th >Account</th>
+              <th>Likes</th>
+              <th >Total</th>
+            </tr>
+            <tr>
+              <td id="account"></td>
+              <td id="likes"></td>
+              <td id="total"></td>
+            </tr>
+          </table>
         </div>
     </body>
     </html>

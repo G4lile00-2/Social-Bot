@@ -3,24 +3,69 @@ body{
     width: 100%;
     background-color: #121212;
     margin: 0%;
+    transition: 0.2s;
 }
+*:focus {
+    outline: none;
+  }
 .header{
-    height: 120px;
+    height: 12vh;
     width: 100%;
-    position: fixed;
     background-color: #1a1a1a;
     margin: 0px;
-    border-radius: 12px;
-
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 0px;
 }
 .header p{
     position:relative;
     color: #ecf2f8;
     text-align: center;
-    font-size: 50px;
+    font-size: 5vh;
     letter-spacing: 3px;
     font-family: 'Teko', sans-serif;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 2vh;
+}
+.config{
+    height: 40vh;
+    width: 70%;
+    background-color: #1a1a1a;
+    margin:0px;
+    width: 60%;
+    border: 3px solid #39ff14;
+    border-radius: 12px;
+    margin-top: 6vh;
+    margin-left: 20%;
+    text-align:  center;
+    overflow: hidden;
+}
+.config input, button{
+    color: #000000;
+    background-color: #ecf2f8;
+    font-size: 15px;
+    border: 0px;
+    border-radius: 12px;
+    text-align:center;
+}
+.login{
+    margin-top: 4vh;
+    width: 40%;
+    height: 20px;
 }
 
+.pass {
+    margin-top: 4vh;
+    width: 40%;
+    height: 20px;
+}
+.run{
+    margin-top: 18vh;
+    width: 40%;
+    height: 4vh;
+}
+
+.run:focus{
+    background-color: #39ff14;
+    transition: 0.5s;
+}
