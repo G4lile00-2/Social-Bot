@@ -1,0 +1,19 @@
+{
+  "name": "social-bot",
+  "version": "1.0.0",
+  "description": "Social midia Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G4lile00/Social-Bot.git"
+  },
+  "author": "G4lile00",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G4lile00/Social-Bot/issues"
+  },
+  "homepage": "https://github.com/G4lile00/Social-Bot#readme"
+}
