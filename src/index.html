@@ -14,8 +14,20 @@
         </div>
     <div class="config">
         <input type="text" onclick="" id="login" class="login" placeholder="  Login "><br>
+
         <input type="password" onclick="" id="pass" class="pass" placeholder="  Password  "><br>
-       <button id="Botrun" class="run" onclick="bot()">Run the bot</button>
+
+        <Input class="range" type="range" name "" value="0" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+        <div class="recomend">
+        <p>This bar will select the like range of the bot</p>
+        <p>like rates over 78% can couse temporarily ban on your accont</p>
+        </div>
+        <div class="div-display">
+          <span id="rangeValue">0</span>
+          <span>%</span><br>
+          </div>
+        <button id="Botrun" class="run" onclick="bot()">Run the bot</button>
+
     
         </div>
     <div class="info">
@@ -33,4 +45,9 @@
           </table>
         </div>
     </body>
+    <script type="text/javascript">
+      function rangeSlide(value) {
+          document.getElementById('rangeValue').innerHTML = value;
+      }
+  </script>
     </html>
