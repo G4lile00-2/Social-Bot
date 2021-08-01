@@ -2,43 +2,52 @@
 <html>
 <head>
     <meta charset="UTF-8">
-        <title>Instagram Bot</title>
-    <link def rel="stylesheet" href="index.css">
-    <link def rel="preconnect" href="https://fonts.googleapis.com">
-    <link def rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link def href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+      <title>Instagram Bot</title>
+        <link def rel="stylesheet" href="index.css">
+        <link def rel="preconnect" href="https://fonts.googleapis.com">
+        <link def rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link def href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
     </head>
 <body>
     <div class="header">
         <p>SOCIAL BOT</p>
         </div>
     <div class="config">
-        <input type="text" onclick="" id="login" class="login" placeholder="  Login "><br>
 
-        <input type="password" onclick="" id="pass" class="pass" placeholder="  Password  "><br>
-
-        <Input class="range" type="range" name "" value="0" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-        <div class="recomend">
-        <p>This bar will select the like range of the bot</p>
-        <p>like rates over 78% can couse temporarily ban on your accont</p>
+      <div class="inputs">
+          <input type="text" onclick="" id="login" class="login" placeholder="  Login "><br>
+          <input type="password" onclick="" id="pass" class="pass" placeholder="  Password  "><br>
+          
+          <input class="range" type="range" name= "" value="0" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
         </div>
+
+        <div class="recomend">
+          <p>This bar will select the like range of the bot</p>
+          <p>like rates over 78% can couse temporarily ban on your accont</p>
+          </div>
+        
         <div class="div-display">
           <span id="rangeValue">0</span>
           <span>%</span><br>
           </div>
-        <button id="Botrun" class="run" onclick="bot()">Run the bot</button>
 
+          <div class="button">
+            <button id="Botrun" class="run" onclick="likerate()">Run the bot</button>
+            </div>
     
         </div>
     <div class="info">
+
         <table class="tablefix" align="center">
             <tr>
               <th >Account</th>
+              <th>Like rate</th>
               <th>Likes</th>
               <th >Total</th>
             </tr>
             <tr>
               <td id="account"></td>
+              <td id="likerate"></td>
               <td id="likes"></td>
               <td id="total"></td>
             </tr>
@@ -49,5 +58,11 @@
       function rangeSlide(value) {
           document.getElementById('rangeValue').innerHTML = value;
       }
-  </script>
+     </script>
+    <script type="text/javascript">
+    function likerate(){
+              const value = document.getElementById('rangeValue').innerHTML;
+              document.getElementById('likerate').innerText = value + "%";
+    }
+    </script>
     </html>
