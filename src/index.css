@@ -135,3 +135,16 @@ span{
     background-color: #b026ff;
     transition: 0.5s;
 }
+.info{
+    height: 20vh;
+    width: 70%;
+    background-color: #1a1a1a;
+    margin:0px;
+    width: 60%;
+    border: 3px solid #b026ff;
+    border-radius: 12px;
+    margin-top: 6vh;
+    margin-left: 20%;
+    text-align:  center;
+    overflow: hidden;
+}
